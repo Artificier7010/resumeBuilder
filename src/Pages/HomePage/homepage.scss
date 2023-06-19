@@ -1,0 +1,150 @@
+.Homepage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .homepage-wrap {
+        width: 90%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .heading {
+            width: 100%;
+            padding: 5px 25px;
+            border: 3px solid var(--scclr);
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-family: var(--prfont);
+                text-transform: uppercase;
+                color: var(--ficlr);
+            }
+
+            p {
+                margin: 0;
+                color: var(--ficlr);
+            }
+        }
+
+        .banner {
+            width: 100%;
+            margin: 30px 0;
+            padding: 25px;
+            border: 3px solid var(--scclr);
+            border-radius: 10px;
+            font-family: var(--prfont);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .banner-title {
+                width: 100%;
+                color: var(--ficlr);
+            }
+
+            .btns {
+                width: 100%;
+
+                button,
+                a {
+                    padding: 10px 60px;
+                    text-decoration: none;
+                    border: none;
+                    outline: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                    color: var(--ficlr);
+                    background: transparent;
+                    border-radius: 8px;
+                    transition: 0.5s ease;
+                    border: 2px dashed var(--teclr);
+
+                    &:hover {
+                        background: transparent;
+                        color: rgb(131, 131, 131);
+                        border-color: rgb(113, 113, 113);
+                        transition: 0.5s ease;
+                    }
+
+                }
+            }
+
+            .subtext {
+                color: white;
+            }
+        }
+
+        .your-resumes {
+            width: 100%;
+            border: 2px solid var(--scclr);
+            border-radius: 10px;
+            padding: 25px;
+            color: white;
+
+            .works-wrap{
+                width: 100%;
+                margin: 20px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+
+                .prev-card{
+                    width: 100px;
+                    height: 100px;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    padding: 3px;
+
+                    a{
+                        text-decoration: none;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid var(--scclr);
+                        overflow: hidden;
+                        border-radius: 5px;
+                        position: relative;
+                        color: white;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+
+                        }
+                        p{
+                            position: absolute;
+                            left: 4px;
+                            bottom: 0px;
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .foot {
+            width: 100%;
+            border: 2px solid var(--scclr);
+            border-radius: 10px;
+            padding: 25px;
+
+            h1 {
+                color: var(--ficlr);
+                font-family: var(--prfont);
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Gruppo&display=swap');
+
+:root {
+  --prclr:#27374D;
+  --scclr:#526D82;
+  --teclr:#9DB2BF;
+  --ficlr:#DDE6ED;
+
+
+  --prfont: 'Abel', sans-serif;
+  --scfont: 'Gruppo', sans-serif;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--prclr);
+}
+
+
+// Utility Classes
+// *********************
+
+.icon-btn{
+  border: none;
+  outline: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: var(--teclr);
+  padding: 3px;
+  border: 1px solid rgb(57, 83, 87);
+
+}

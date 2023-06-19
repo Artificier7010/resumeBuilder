@@ -134,3 +134,85 @@
 
     }
 }
+
+
+@media screen and (max-width:991px) {
+
+    .PreviewPage{
+        padding: 0;
+        .prevw-wrap{
+            width: 100%;
+            padding: 0;
+            align-items: center;
+            .prew-page{
+                width: 90%;
+                height: 400px;
+
+                .page-pr-header{
+                    h1{
+                        font-size: 1em;
+                    }
+                    p{
+                        font-size: 0.8em;
+                    }
+                }
+
+                .page-content{
+                    .cat-title{
+                        font-size: 1em;
+                    }
+                    .left{
+                        .skillswrp{
+                            span{
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                    .right{
+                        .qualifiwrp{
+                            .quali-cont{
+                                .institute{
+                                    font-size: 1em;
+                                }
+                                p{
+                                    font-size: 0.8em;
+                                }
+                            }
+                        }
+                        .expwrp {
+                           
+    
+                            .exp-cont {
+                              
+    
+                                .company {
+                                    font-size: 1em;
+                                    font-weight: 500;
+                                    color: gray;
+                                }
+    
+                                p {
+                                    font-size:9px;
+                                    margin: 0;
+                                    font-weight: 500;
+                                }
+    
+                                ul,
+                                ol {
+                                    padding-left: 5px;
+    
+                                    li {
+                                        font-size: 9px;
+    
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    
+}

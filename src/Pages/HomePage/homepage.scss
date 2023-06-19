@@ -148,3 +148,20 @@
         }
     }
 }
+
+
+@media screen and (max-width:991px) {
+    .Homepage{
+        .homepage-wrap{
+            .your-resumes{
+                .works-wrap{
+                    flex-wrap: wrap;
+                }
+            }
+            .foot{
+                margin: 30px 0;
+            }
+        }
+    }
+    
+}

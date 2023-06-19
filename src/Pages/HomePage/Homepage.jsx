@@ -25,7 +25,7 @@ const Homepage = () => {
         <div className='Homepage'>
             <div className="homepage-wrap">
                 {/* heading */}
-                <div class="heading">
+                <div className="heading">
                     <h1>Resume Builder</h1>
                     <p>BY ANIMESH VERMA</p>
                 </div>

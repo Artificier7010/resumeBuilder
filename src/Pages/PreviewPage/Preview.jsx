@@ -9,10 +9,12 @@ import axios from 'axios';
 import { v4 as uuid4 } from 'uuid';
 import config from '../../config.json';
 import { resetFormData } from '../../Store/Slices/formSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Preview = () => {
     const formData = useSelector(state => state.form);
     const dispatch=useDispatch();
+    const navigate=useNavigate();
 
     const buildResume = async () => {
         axios.post(`${config.apiUrl}/build/resume`, { ...formData, refId: uuid4() })
@@ -34,6 +36,7 @@ const Preview = () => {
             pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
             pdf.save('generated.pdf');
             dispatch(resetFormData());
+            navigate('/');
         });
     };
 
@@ -43,7 +46,7 @@ const Preview = () => {
     return (
         <div className='PreviewPage'>
             <button onClick={buildResume} style={{ top: "30px" }} className='btn btn-info'>Generate</button>
-            <button style={{ top: "100px" }} className='btn btn-info'>Edit</button>
+            <button onClick={()=>navigate('/build')} style={{ top: "100px" }} className='btn btn-info'>Edit</button>
             <div className="prevw-wrap">
                 <div className="prew-page" id='pdf-content'>
 
